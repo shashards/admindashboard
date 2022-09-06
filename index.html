@@ -6,12 +6,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b98554e262.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <div class="header">Header</div>
-        <div class="sidebar">Siderbar</div>
-        <div class="main-content">Content</div>
+        <div class="header">
+            <div class="top">
+                <div class="search">
+                    <svg style="width:25px;height:25px;" viewBox="0 0 24 24">
+                        <path fill="#6F6F6F" ng-attr-d="{{icon.data}}" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+                    </svg>
+                    <form>
+                        <input type="text" id="search" name="search">
+                    </form>
+                </div>
+                <div class="account">
+                    <img src="profile.png" height="35px" width="35px">
+                    <p class="name">Shane Shardlow</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="user-info">
+                    <div class="user-img">
+                        <img src="profile.png" height="65px" width="65px">
+                    </div>
+                    <p><span class="user-hi">Hi there,</span><br>Shane Shardlow (@Shane)</p>
+                </div>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="Logo.PNG" height="35px" width="35px">
+                </div> 
+                <h2 class="logo-txt">Dashboard</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-message"></i>Messages</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-clock"></i>History</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-list-check"></i>Tasks</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-people-group"></i>Communities</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-question"></i>Support</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user-lock"></i>Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            
+            <div class="projects">
+                <div class="project-card">
+                    <h4 class="project-title">Project Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4 class="project-title">Project Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4 class="project-title">Project Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4 class="project-title">Project Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4 class="project-title">Project Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4 class="project-title">Project Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="announce-holder">
+                    <div class="announcement">
+                        <h3 class="announce-title">Test 1</h3>
+                        <p class="announce-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure...</p>
+                        <hr>
+                    </div>
+                    <div class="announcement">
+                        <h3 class="announce-title">Test 2</h3>
+                        <p class="announce-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure...</p>
+                        <hr>
+                    </div>
+                    <div class="announcement">
+                        <h3 class="announce-title">Test 3</h3>
+                        <p class="announce-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, harum repellendus vitae consequuntur nisi impedit in iure...</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="trend-holder">
+                    <div class="trend">
+                        <img src="profile.png" height="35px" width="35px">
+                        <p class="trend-title">@Lorem</p>
+                        <p class="trend-body">Lorem Ipsum</p>
+                    </div>
+                    <div class="trend">
+                        <img src="profile.png" height="35px" width="35px">
+                        <p class="trend-title">@Lorem</p>
+                        <p class="trend-body">Lorem Ipsum</p>
+                    </div>
+                    <div class="trend">
+                        <img src="profile.png" height="35px" width="35px">
+                        <p class="trend-title">@Lorem</p>
+                        <p class="trend-body">Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
